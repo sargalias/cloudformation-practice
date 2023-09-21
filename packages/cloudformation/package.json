@@ -1,0 +1,15 @@
+{
+  "name": "cloudformation-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish-1": "aws cloudformation create-stack --stack-name CfnStateMachineExample --template-body file://hello-world-step-function.yaml --capabilities CAPABILITY_IAM"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

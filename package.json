@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
-    "publish-1": "aws cloudformation create-stack --stack-name CfnStateMachineExample --template-body file://hello-world-step-function.yaml --capabilities CAPABILITY_IAM"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  }
+  "license": "ISC"
 }
