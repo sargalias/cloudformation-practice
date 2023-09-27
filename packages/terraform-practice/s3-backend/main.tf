@@ -12,13 +12,13 @@ terraform {
       version = "~> 3.0"
     }
   }
-  # backend "s3" {
-  #   bucket         = "sargalias-terraform-state"
-  #   key            = "terraform.tfstate"
-  #   region         = "eu-west-2"
-  #   encrypt        = true
-  #   dynamodb_table = "terraform_locks"
-  # }
+  backend "s3" {
+    bucket         = "sargalias-terraform-state"
+    key            = "terraform.tfstate"
+    region         = "eu-west-2"
+    encrypt        = true
+    dynamodb_table = "terraform_locks"
+  }
 }
 
 provider "aws" {
